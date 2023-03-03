@@ -29,6 +29,10 @@ app.get('/home', function(req, res){
 app.get('/', function(req, res){
     res.sendFile(__dirname+'/index.html');
 })
+
+app.get('/write', function(req, res){
+    res.sendFile(__dirname+'/write.html');
+});
 // app2.get('/beauty', function(req, res){
 //     res.send('뷰티용품 쇼핑하는 페이지');
 // });
