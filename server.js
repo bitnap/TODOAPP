@@ -9,6 +9,9 @@ app.listen(8080, function(){
 // app2.listen(8000, function(){
 //     console.log('listening on 8000');
 // });
+// app2.get('/beauty', function(req, res){
+//     res.send('뷰티용품 쇼핑하는 페이지');
+// });
 
 
 app.get('/pet', function(요청, 응답){
@@ -33,6 +36,3 @@ app.get('/', function(req, res){
 app.get('/write', function(req, res){
     res.sendFile(__dirname+'/write.html');
 });
-// app2.get('/beauty', function(req, res){
-//     res.send('뷰티용품 쇼핑하는 페이지');
-// });
