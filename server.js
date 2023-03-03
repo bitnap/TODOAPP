@@ -23,6 +23,9 @@ app.get('/home', function(req, res){
     res.send('홈페이지');
 });
 
+/**
+ * get요청 후 html파일 보내주기
+ */
 app.get('/', function(req, res){
     res.sendFile(__dirname+'/index.html');
 })
