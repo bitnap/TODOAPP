@@ -75,3 +75,9 @@ app.get('/write', function(req, res){
     res.sendFile(__dirname+'/write.html');
 });
 
+
+app.get('/list', function(req, res){
+    res.render('list.ejs');
+});
+
+
