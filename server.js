@@ -5,11 +5,20 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended : true}));
 
 
+const MongoClient = require('mongodb').MongoClient;
+MongoClient.connect('mongodb+srv://admin:admin1234@cluster0.hwfu4h5.mongodb.net/?retryWrites=true&w=majority', function(에러, client){
+    if (에러) return console.log(에러);
+
+    app.listen(8080, function(){
+        console.log('listening on 8080');
+    });
+
+});
+
+
+
 // const app2 = express();
 
-app.listen(8080, function(){
-    console.log('listening on 8080');
-});
 
 // app2.listen(8000, function(){
 //     console.log('listening on 8000');
