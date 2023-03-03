@@ -45,4 +45,6 @@ app.get('/write', function(req, res){
 
 app.post('/add', function(req, res){
     res.send('전송완료');
+    console.log(req.body.date);
+    console.log(req.body.title);
 });
